@@ -7,6 +7,10 @@
 </head>
 <body>
     <h1>Error</h1>
-    <p>{{ error_message }}</p>
+    {% if error_message %}
+    <h1>{{ error_message }}</h1>
+    {% else %}
+    <h1>An error occurred.</h1>
+    {% endif %}
 </body>
 </html>
