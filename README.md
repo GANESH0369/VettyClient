@@ -22,7 +22,7 @@ https://github.com/GANESH0369/VettyClient.git
 python3 -m venv venv
 
 3. Activate the virtual environment(On Windows, run):
-.\venv\Scripts\activate
+\venv\Scripts\activate
 
 
 4. Navigate to the cloned directory:

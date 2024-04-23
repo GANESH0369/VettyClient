@@ -4,13 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 106;
+            padding: 25;
+        }
+
+        h1 {
+            color: #ff0000;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(104, 87, 87, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>Error</h1>
-    {% if error_message %}
-    <h1>{{ error_message }}</h1>
-    {% else %}
-    <h1>An error occurred.</h1>
-    {% endif %}
+    <div class="container">
+        <h1>Error</h1>
+        {% if error_message %}
+        <h3>{{ error_message }}</h3>
+        {% else %}
+        <h3>An error occurred.</h3>
+        {% endif %}
+    </div>
 </body>
 </html>
